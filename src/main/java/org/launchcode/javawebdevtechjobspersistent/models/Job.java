@@ -1,7 +1,7 @@
 package org.launchcode.javawebdevtechjobspersistent.models;
 
 import javax.persistence.*;
-
+//17.2.1
 @Entity
 public class Job{
 

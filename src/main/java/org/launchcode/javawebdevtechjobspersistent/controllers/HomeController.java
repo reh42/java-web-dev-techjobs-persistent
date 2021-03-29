@@ -29,7 +29,8 @@ public class HomeController {
         model.addAttribute(new Job());
         return "add";
     }
-
+//model binding 12.4.1
+    //post is for process / doing an action after an event
     @PostMapping("add")
     public String processAddJobForm(@ModelAttribute @Valid Job newJob,
                                        Errors errors, Model model, @RequestParam int employerId, @RequestParam List<Integer> skills) {
@@ -41,12 +42,13 @@ public class HomeController {
 
         return "redirect:";
     }
-
+//get is for display
+    //jobId is path variable
     @GetMapping("view/{jobId}")
     public String displayViewJob(Model model, @PathVariable int jobId) {
 
         return "view";
     }
 
-
+//delete an event 12.3.5
 }
