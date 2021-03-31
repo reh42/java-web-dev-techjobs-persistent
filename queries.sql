@@ -9,5 +9,6 @@
 SELECT name FROM employer WHERE (location = "St. Louis City")
 
 ## Part 3: Test it with SQL
-
+ALTER TABLE job
+DROP COLUMN employer
 ## Part 4: Test it with SQL

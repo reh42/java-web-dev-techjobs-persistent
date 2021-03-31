@@ -1,6 +1,7 @@
 package org.launchcode.javawebdevtechjobspersistent.models;
 
 import javax.persistence.Entity;
+import java.util.List;
 
 @Entity
 public class Skill extends AbstractEntity {
@@ -8,6 +9,11 @@ public class Skill extends AbstractEntity {
 
     private String description;
 
+    public Skill(String description) {
+        super();
+        this.description = description;
+
+    }
     public Skill (){
 
     }
