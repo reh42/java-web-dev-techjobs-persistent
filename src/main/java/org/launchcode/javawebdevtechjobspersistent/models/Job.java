@@ -10,6 +10,7 @@ public class Job extends AbstractEntity{
 
 
     @ManyToOne
+    @JoinColumn(name="employerId")
     private Employer employer;
 
     @ManyToMany

@@ -9,6 +9,8 @@
 SELECT name FROM employer WHERE (location = "St. Louis City")
 
 ## Part 3: Test it with SQL
-ALTER TABLE job
+ALTER TABLE techJobs.job
 DROP COLUMN employer
 ## Part 4: Test it with SQL
+SELECT name, description FROM techJobs.skill WHERE jobId is Not Null
+ORDER BY name ASC
